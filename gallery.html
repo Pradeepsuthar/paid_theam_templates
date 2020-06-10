@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="M_Adnan">
-    <title>Auril HTML5 Template</title>
+    <title></title>
 
     <link rel="stylesheet" type="text/css" href="revolution/css/settings.css">
     <!-- RS5.0 Layers and Navigation Styles -->
@@ -41,49 +41,39 @@
         <header>
 
             <!-- Logo -->
-            <div class="container">
-                <div class="logo"> <a href="#"><img class="img-responsive" src="images/logo.png" alt="Brand Logo"></a>
-                </div>
+      <div class="container">
+        <div class="logo"> <a href="#"><img class="img-responsive" src="images/logo.png" alt="Brand Logo"></a>
+        </div>
 
-                <!-- INFO -->
-                <div class="top-info-con d-none d-sm-block">
-                    <ul>
+        <!-- INFO -->
+        <div class="top-info-con d-none d-sm-block">
+          <ul>
 
-                        <!-- Call Us Now -->
-                        <li>
-                            <div class="media-left">
-                                <div class="icon"> <i class="icon-call-in"></i></div>
-                            </div>
-                            <div class="media-body">
-                                <h6>Call Us Now </h6>
-                                <p>+ ( 124 ) 45 78 678 </p>
-                            </div>
-                        </li>
+            <!-- Call Us Now -->
+            <li>
+              <div class="media-left">
+                <div class="icon"> <i class="icon-call-in"></i></div>
+              </div>
+              <div class="media-body">
+                <h6>Call Us Now </h6>
+                <p id="phone"> </p>
+              </div>
+            </li>
 
-                        <!-- Email us -->
-                        <li>
-                            <div class="media-left">
-                                <div class="icon"> <i class="icon-envelope-open"></i></div>
-                            </div>
-                            <div class="media-body">
-                                <h6>Email us</h6>
-                                <p>info@mail.com</p>
-                            </div>
-                        </li>
+            <!-- Email us -->
+            <li>
+              <div class="media-left">
+                <div class="icon"> <i class="icon-envelope-open"></i></div>
+              </div>
+              <div class="media-body">
+                <h6>Email us</h6>
+                <p id="email"></p>
+              </div>
+            </li>
 
-                        <!-- Opening Time -->
-                        <li>
-                            <div class="media-left">
-                                <div class="icon"> <i class="icon-clock"></i></div>
-                            </div>
-                            <div class="media-body">
-                                <h6>Opening Hours </h6>
-                                <p>Mon - Sat : 9am to 7pm</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+          </ul>
+        </div>
+      </div>
 
             <!-- Navigation -->
             <nav class="navbar">
@@ -118,21 +108,22 @@
         <div id="content">
 
             <div class="container padding-top-100 padding-bottom-100">
-                <ul class="gallery row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-4">
-                    <li class="col my-3">
-                        <div class="gal-item"> <img
-                                src="https://cdn.pixabay.com/photo/2020/05/08/17/51/woman-5146765_960_720.jpg" alt=""
-                                width="100%" height="200px">
-                            <div class="hover-info">
-                                <div class="position-center-center"><a title="View"
-                                        href="https://cdn.pixabay.com/photo/2020/05/08/17/51/woman-5146765_960_720.jpg"
-                                        data-lighter> <i class="fa fa-eye"></i> </a></div>
+                <ul class="gallery row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-4" id="img_gallery_row">
+                    <li class="col my-3" id="gallery_li">
+                        <div class="gal-item" id="gallery_item"> 
+                          <img src="https://cdn.pixabay.com/photo/2020/05/08/17/51/woman-5146765_960_720.jpg" alt="" class="gallery_item_img" id="gallery_item_img">
+                            <div class="hover-info" id="open_gallery_img">
+                                <div class="position-center-center" id="open_gallery_img_div">
+                                  <a href="https://cdn.pixabay.com/photo/2020/05/08/17/51/woman-5146765_960_720.jpg" data-lighter> 
+                                    <i class="fa fa-eye" id="open_icon"></i> 
+                                  </a>
+                                </div>
                             </div>
                         </div>
-                        <div class="item-detail">
+                        <!-- <div class="item-detail">
                             <h6>Long Way Truck</h6>
                             <span>By chris hemsworth</span>
-                        </div>
+                        </div> -->
                     </li>
                 </ul>
             </div>
@@ -143,66 +134,61 @@
         <!-- End Content -->
 
 
-       <!--======= FOOTER =========-->
-    <footer class="mt-0">
+   <!--======= FOOTER =========-->
+   <footer class="mt-0" id="footer_section">
+    <div class="container">
+      <div class="footer-info">
         <div class="container">
-  
-  
-          <div class="footer-info">
-            <div class="container">
-  
-              <!--======= Footer Info =========-->
-              <div class="foot-info-con">
-                <ul class="row">
-  
-                  <!-- Call Us Now -->
-                  <li class="col-md-3 col-sm-6 col-xs-6">
-                    <div class="media-left">
-                      <div class="icon"> <i class="fa fa-whatsapp"></i></div>
-                    </div>
-                    <div class="media-body">
-                      <h6>Chat on whatsapp </h6>
-                      <p><a class="text-white" href="#">+ ( 124 ) 45 78 678</a></p>
-                    </div>
-                  </li>
-  
-                  <!-- Email us -->
-                  <li class="col-md-3 col-sm-6 col-xs-6">
-                    <div class="media-left">
-                      <div class="icon"> <i class="fa fa-instagram"></i></div>
-                    </div>
-                    <div class="media-body">
-                      <h6>Chat on instagram</h6>
-                      <p><a class="text-white" href="#">info@mail.com</a></p>
-                    </div>
-                  </li>
-  
-                  <!-- Fax to us -->
-                  <li class="col-md-3 col-sm-6 col-xs-6">
-                    <div class="media-left">
-                      <div class="icon"> <i class="fa fa-linkedin"></i></div>
-                    </div>
-                    <div class="media-body">
-                      <h6>Chat on linkedin</h6>
-                      <p><a class="text-white" href="#">username</a></p>
-                    </div>
-                  </li>
-                  <!-- Opening Time -->
-                  <li class="col-md-3 col-sm-6 col-xs-6">
-                    <div class="media-left">
-                      <div class="icon"> <i class="fa fa-facebook"></i></div>
-                    </div>
-                    <div class="media-body">
-                      <h6>Chat on facebook</h6>
-                      <p><a class="text-white" href="#">username</a></p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
+          <!--======= Footer Info =========-->
+          <div class="foot-info-con">
+            <ul class="row" id="socialLinks">
+              <!-- Call Us Now -->
+              <li class="col-md-3 col-sm-6 col-xs-6" id="socialLink_li" style="display: none;">
+                <div class="media-left" id="socialLink_li_media_left">
+                  <div class="icon" id="socialLink_li_media_left_icon"> <i class="fa fa-whatsapp"></i></div>
+                </div>
+                <div class="media-body" id="socialLink_li_media_body">
+                  <h6>Chat on whatsapp </h6>
+                  <p><a class="text-white" href="#" id="socialLink_li_media_body_a">Whatsapp</a></p>
+                </div>
+              </li>
+              <!-- Email us -->
+              <!-- <li class="col-md-3 col-sm-6 col-xs-6">
+                <div class="media-left">
+                  <div class="icon"> <i class="fa fa-instagram"></i></div>
+                </div>
+                <div class="media-body">
+                  <h6>Chat on instagram</h6>
+                  <p><a class="text-white" href="#" id="instagram">Instagram</a></p>
+                </div>
+              </li> -->
+
+              <!-- Fax to us -->
+              <!-- <li class="col-md-3 col-sm-6 col-xs-6">
+                <div class="media-left">
+                  <div class="icon"> <i class="fa fa-linkedin"></i></div>
+                </div>
+                <div class="media-body">
+                  <h6>Chat on linkedin</h6>
+                  <p><a class="text-white" href="#" id="linkedin">Linkedin</a></p>
+                </div>
+              </li> -->
+              <!-- Opening Time -->
+              <!-- <li class="col-md-3 col-sm-6 col-xs-6">
+                <div class="media-left">
+                  <div class="icon"> <i class="fa fa-youtube"></i></div>
+                </div>
+                <div class="media-body">
+                  <h6>Chat on youtube</h6>
+                  <p><a class="text-white" href="#" id="youtube">YouTube</a></p>
+                </div>
+              </li> -->
+            </ul>
           </div>
         </div>
-      </footer>
+      </div>
+    </div>
+  </footer>
   
       <!--======= RIGHTS =========-->
       <div class="rights">
@@ -235,6 +221,10 @@
     <!-- Begin map script-->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCf0dPCQ0C7oVF0WFKhuyz7v7oWei3vFPI "></script>
     <script src="js/main.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
+    <script src="js/generator.js"></script>
   </body>
   
   </html>

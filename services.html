@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="M_Adnan">
-  <title>Auril HTML5 Template</title>
+  <title></title>
 
   <link rel="stylesheet" type="text/css" href="revolution/css/settings.css">
   <!-- RS5.0 Layers and Navigation Styles -->
@@ -56,7 +56,7 @@
               </div>
               <div class="media-body">
                 <h6>Call Us Now </h6>
-                <p>+ ( 124 ) 45 78 678 </p>
+                <p id="phone"> </p>
               </div>
             </li>
 
@@ -67,20 +67,10 @@
               </div>
               <div class="media-body">
                 <h6>Email us</h6>
-                <p>info@mail.com</p>
+                <p id="email"></p>
               </div>
             </li>
 
-            <!-- Opening Time -->
-            <li>
-              <div class="media-left">
-                <div class="icon"> <i class="icon-clock"></i></div>
-              </div>
-              <div class="media-body">
-                <h6>Opening Hours </h6>
-                <p>Mon - Sat : 9am to 7pm</p>
-              </div>
-            </li>
           </ul>
         </div>
       </div>
@@ -114,151 +104,84 @@
       </div>
     </section>
 
-    <!-- Content -->
-    <div id="content">
 
-      <!-- What We Do -->
-      <section class="padding-top-100 padding-bottom-70">
-        <div class="container">
-          <!-- Heading -->
-          <div class="heading text-center">
-            <h5>What We Do</h5>
-            <hr>
-            <p>Phasellus imperdiet libero sit amet ante Donec convallis elementum leum </p>
+       <!-- Content -->
+       <div id="content">
+
+        <!-- Welcome -->
+        <section class="padding-top-100">
+          <div class="container">
+  
+            <!-- Heading -->
+            <div class="heading text-center">
+              <h5>Our Services</h5>
+              <hr>
+            </div>
+  
+            <!-- SERVICES -->
+            <div class="services">
+              <ul class="row" id="ourServices">
+  
+              </ul>
+            </div>
           </div>
-
-          <!-- What We Do -->
-          <div class="what-we-do">
-            <ul class="row">
-
-              <!-- 01 -->
-              <li class="col-md-3 col-sm-6 col-xs-6">
-                <div class="media-left">
-                  <div class="icon">01</div>
-                </div>
-                <div class="media-body">
-                  <h6>Their house is a mart where people come </h6>
-                </div>
-                <p>Rogers are blown out of their trajectory into an orbit which freezes his life after support systems
-                  and returns to him.</p>
-              </li>
-
-              <!-- 02 -->
-              <li class="col-md-3 col-sm-6 col-xs-6">
-                <div class="media-left">
-                  <div class="icon">02</div>
-                </div>
-                <div class="media-body">
-                  <h6>Mister we could use a man like Herbert </h6>
-                </div>
-                <p>Michael Knight a young loner on a crusade to champion the cause of the innocent world of criminals
-                  here.</p>
-              </li>
-
-              <!-- 03 -->
-              <li class="col-md-3 col-sm-6 col-xs-6">
-                <div class="media-left">
-                  <div class="icon">03</div>
-                </div>
-                <div class="media-body">
-                  <h6>Their house is a mart where people come </h6>
-                </div>
-                <p>If not for the courage of the spontenious crew the minnow would be lost in the minnow will be lost in
-                  the crowd</p>
-              </li>
-
-              <!-- 04 -->
-              <li class="col-md-3 col-sm-6 col-xs-6">
-                <div class="media-left">
-                  <div class="icon">04</div>
-                </div>
-                <div class="media-body">
-                  <h6>Till the one day when the lady met this fellow</h6>
-                </div>
-                <p>Knight a young loner on a crusade to the champion cause of the innocent from this tropic port aboard
-                  this tiny ship</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
 
-      <section class="padding-top-0 padding-bottom-100">
-        <div class="in-testi container">
-          <div class="testi-name">
-            <h5>Their house is a mart where people come</h5>
-            <span>Happy Client</span>
-          </div>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
-            Aldus PageMaker including versions of Lorem Ipsum.</p>
-        </div>
-      </section>
-
-
-    </div>
 
     <!-- End Content -->
 
 
     <!--======= FOOTER =========-->
-    <footer class="mt-0">
+    <footer class="mt-0" id="footer_section">
       <div class="container">
-
-
         <div class="footer-info">
           <div class="container">
-
             <!--======= Footer Info =========-->
             <div class="foot-info-con">
-              <ul class="row">
-
+              <ul class="row" id="socialLinks">
                 <!-- Call Us Now -->
-                <li class="col-md-3 col-sm-6 col-xs-6">
-                  <div class="media-left">
-                    <div class="icon"> <i class="fa fa-whatsapp"></i></div>
+                <li class="col-md-3 col-sm-6 col-xs-6" id="socialLink_li" style="display: none;">
+                  <div class="media-left" id="socialLink_li_media_left">
+                    <div class="icon" id="socialLink_li_media_left_icon"> <i class="fa fa-whatsapp"></i></div>
                   </div>
-                  <div class="media-body">
+                  <div class="media-body" id="socialLink_li_media_body">
                     <h6>Chat on whatsapp </h6>
-                    <p><a class="text-white" href="#">+ ( 124 ) 45 78 678</a></p>
+                    <p><a class="text-white" href="#" id="socialLink_li_media_body_a">Whatsapp</a></p>
                   </div>
                 </li>
-
                 <!-- Email us -->
-                <li class="col-md-3 col-sm-6 col-xs-6">
+                <!-- <li class="col-md-3 col-sm-6 col-xs-6">
                   <div class="media-left">
                     <div class="icon"> <i class="fa fa-instagram"></i></div>
                   </div>
                   <div class="media-body">
                     <h6>Chat on instagram</h6>
-                    <p><a class="text-white" href="#">info@mail.com</a></p>
+                    <p><a class="text-white" href="#" id="instagram">Instagram</a></p>
                   </div>
-                </li>
+                </li> -->
 
                 <!-- Fax to us -->
-                <li class="col-md-3 col-sm-6 col-xs-6">
+                <!-- <li class="col-md-3 col-sm-6 col-xs-6">
                   <div class="media-left">
                     <div class="icon"> <i class="fa fa-linkedin"></i></div>
                   </div>
                   <div class="media-body">
                     <h6>Chat on linkedin</h6>
-                    <p><a class="text-white" href="#">username</a></p>
+                    <p><a class="text-white" href="#" id="linkedin">Linkedin</a></p>
                   </div>
-                </li>
+                </li> -->
                 <!-- Opening Time -->
-                <li class="col-md-3 col-sm-6 col-xs-6">
+                <!-- <li class="col-md-3 col-sm-6 col-xs-6">
                   <div class="media-left">
-                    <div class="icon"> <i class="fa fa-facebook"></i></div>
+                    <div class="icon"> <i class="fa fa-youtube"></i></div>
                   </div>
                   <div class="media-body">
-                    <h6>Chat on facebook</h6>
-                    <p><a class="text-white" href="#">username</a></p>
+                    <h6>Chat on youtube</h6>
+                    <p><a class="text-white" href="#" id="youtube">YouTube</a></p>
                   </div>
-                </li>
+                </li> -->
               </ul>
             </div>
           </div>
@@ -297,6 +220,10 @@
   <!-- Begin map script-->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCf0dPCQ0C7oVF0WFKhuyz7v7oWei3vFPI "></script>
   <script src="js/main.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
+  <script src="js/generator.js"></script>
 </body>
 
 </html>

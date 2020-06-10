@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="M_Adnan">
-  <title>Auril HTML5 Template</title>
+  <title></title>
 
   <link rel="stylesheet" type="text/css" href="revolution/css/settings.css">
   <!-- RS5.0 Layers and Navigation Styles -->
@@ -56,7 +56,7 @@
               </div>
               <div class="media-body">
                 <h6>Call Us Now </h6>
-                <p>+ ( 124 ) 45 78 678 </p>
+                <p id="phone"> </p>
               </div>
             </li>
 
@@ -67,20 +67,10 @@
               </div>
               <div class="media-body">
                 <h6>Email us</h6>
-                <p>info@mail.com</p>
+                <p id="email"></p>
               </div>
             </li>
 
-            <!-- Opening Time -->
-            <li>
-              <div class="media-left">
-                <div class="icon"> <i class="icon-clock"></i></div>
-              </div>
-              <div class="media-body">
-                <h6>Opening Hours </h6>
-                <p>Mon - Sat : 9am to 7pm</p>
-              </div>
-            </li>
           </ul>
         </div>
       </div>
@@ -183,38 +173,36 @@
               <ul>
                 
                 <!-- Call Us Now -->
-                <li>
+                <li id="address_info">
                   <div class="media-left">
                     <div class="icon"> <i class="icon-home"></i></div>
                   </div>
                   <div class="media-body">
                     <h6>Our Location </h6>
-                    <p>44 New Design Street, 
-                      Melbourne, Australia - 005</p>
+                    <p id="address"></p>
                   </div>
                 </li>
                 
                 <!-- Email us -->
-                <li >
+                <li id="call_info">
                   <div class="media-left">
                     <div class="icon"> <i class="ion-android-call"></i></div>
                   </div>
                   <div class="media-body">
                     <h6>Call Us On</h6>
-                    <p>(01) 987 654 321 1</p>
-                    <p>(01) 123 456 789 10</p>
+                    <p id="phone_call"></p>
+                    <p id="whatsapp_call"></p>
                   </div>
                 </li>
                 
                 <!-- Fax to us -->
-                <li>
+                <li id="message_info">
                   <div class="media-left">
                     <div class="icon"> <i class="icon-envelope-letter"></i></div>
                   </div>
                   <div class="media-body">
                     <h6>Send a Message </h6>
-                    <p>info@aurilcars.com</p>
-                    <p>admin@aurilcars.com</p>
+                    <p id="mess_with_email"></p>
                   </div>
                 </li>
               </ul>
@@ -228,60 +216,55 @@
     </section>
   </div>
   
-  <!--======= FOOTER =========-->
-  <footer class="mt-0">
+   <!--======= FOOTER =========-->
+   <footer class="mt-0" id="footer_section">
     <div class="container">
-
-
       <div class="footer-info">
         <div class="container">
-
           <!--======= Footer Info =========-->
           <div class="foot-info-con">
-            <ul class="row">
-
+            <ul class="row" id="socialLinks">
               <!-- Call Us Now -->
-              <li class="col-md-3 col-sm-6 col-xs-6">
-                <div class="media-left">
-                  <div class="icon"> <i class="fa fa-whatsapp"></i></div>
+              <li class="col-md-3 col-sm-6 col-xs-6" id="socialLink_li" style="display: none;">
+                <div class="media-left" id="socialLink_li_media_left">
+                  <div class="icon" id="socialLink_li_media_left_icon"> <i class="fa fa-whatsapp"></i></div>
                 </div>
-                <div class="media-body">
+                <div class="media-body" id="socialLink_li_media_body">
                   <h6>Chat on whatsapp </h6>
-                  <p><a class="text-white" href="#">+ ( 124 ) 45 78 678</a></p>
+                  <p><a class="text-white" href="#" id="socialLink_li_media_body_a">Whatsapp</a></p>
                 </div>
               </li>
-
               <!-- Email us -->
-              <li class="col-md-3 col-sm-6 col-xs-6">
+              <!-- <li class="col-md-3 col-sm-6 col-xs-6">
                 <div class="media-left">
                   <div class="icon"> <i class="fa fa-instagram"></i></div>
                 </div>
                 <div class="media-body">
                   <h6>Chat on instagram</h6>
-                  <p><a class="text-white" href="#">info@mail.com</a></p>
+                  <p><a class="text-white" href="#" id="instagram">Instagram</a></p>
                 </div>
-              </li>
+              </li> -->
 
               <!-- Fax to us -->
-              <li class="col-md-3 col-sm-6 col-xs-6">
+              <!-- <li class="col-md-3 col-sm-6 col-xs-6">
                 <div class="media-left">
                   <div class="icon"> <i class="fa fa-linkedin"></i></div>
                 </div>
                 <div class="media-body">
                   <h6>Chat on linkedin</h6>
-                  <p><a class="text-white" href="#">username</a></p>
+                  <p><a class="text-white" href="#" id="linkedin">Linkedin</a></p>
                 </div>
-              </li>
+              </li> -->
               <!-- Opening Time -->
-              <li class="col-md-3 col-sm-6 col-xs-6">
+              <!-- <li class="col-md-3 col-sm-6 col-xs-6">
                 <div class="media-left">
-                  <div class="icon"> <i class="fa fa-facebook"></i></div>
+                  <div class="icon"> <i class="fa fa-youtube"></i></div>
                 </div>
                 <div class="media-body">
-                  <h6>Chat on facebook</h6>
-                  <p><a class="text-white" href="#">username</a></p>
+                  <h6>Chat on youtube</h6>
+                  <p><a class="text-white" href="#" id="youtube">YouTube</a></p>
                 </div>
-              </li>
+              </li> -->
             </ul>
           </div>
         </div>
@@ -320,6 +303,10 @@
 <!-- Begin map script-->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCf0dPCQ0C7oVF0WFKhuyz7v7oWei3vFPI "></script>
 <script src="js/main.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
+<script src="js/generator.js"></script>
 </body>
 
 </html>

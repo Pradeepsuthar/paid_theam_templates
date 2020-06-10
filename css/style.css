@@ -802,6 +802,23 @@ header .quotes a:hover {
 .go-btn:hover:before {
 	border-color: transparent transparent #36404b transparent;
 }
+
+.module {
+	width: 250px;
+	margin: 0 0 1em 0;
+	overflow: hidden;
+}
+
+.module p {
+	margin: 0;
+}
+
+.line-clamp {
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+
 /*=======================================================
       WORK
 ========================================================*/
@@ -869,6 +886,11 @@ header .quotes a:hover {
 }
 .gallery li.col-6 {
 	padding: 0px;
+}
+
+.gallery_item_img{
+	width: 100%;
+	height: 200px;
 }
 .gallery li .item-detail h6 {
 	text-transform: none;
