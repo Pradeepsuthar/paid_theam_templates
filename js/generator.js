@@ -26,6 +26,11 @@ class GenerateWeb {
         console.log("Whatsapp No. : ", userData.whatsappNo)
         console.log("Shop Name : ", userData.shopName)
 
+        if(document.getElementById('brand_logo')){
+            var brand_logo = document.getElementById('brand_logo');
+            brand_logo.src = "https://splixcube.com/SPLIXCUBE-logo-black.png";
+        }
+
 
         if (document.getElementById('about_section')) {
 
@@ -300,19 +305,16 @@ class GenerateWeb {
                 html += ` 
             <!-- ${siteTemplateData['title']} -->
               <li class="col-md-4 col-sm-6 col-xs-6">
-                <article>
-                  <div class="ser-img"> <img class="img-responsive" src="${siteTemplateData['imgUrl']}" alt="${siteTemplateData['title']}" max-height="300">
+                <div class="ser-img"> <img class="img-responsive" src="${siteTemplateData['imgUrl']}" alt="${siteTemplateData['title']}" max-height="300">
                     <!-- Head -->
-                    <div class="ser-head">
-                      <h6 id="service-title">${siteTemplateData['title']}</h6>
-                    </div>
+                    <h6 id="service-title" class="bg-dark px-4">${siteTemplateData['title']}</h6>
+                   
                   </div>
                   <!-- Detail -->
-                  <div class="detail-in">
-                    <p class="module line-clamp">${siteTemplateData['desc']}</p>
-                    <a href="#." class="go-btn"><i class="ion-ios-arrow-thin-right"></i></a>
+                  <div class="detail-in px-4">
+                    <p class="module line-clamp w-100">${siteTemplateData['desc']}</p>
+                    <a href="#." class="go-btn text-white"><i class="ion-ios-arrow-thin-right"></i></a>
                   </div>
-                </article>
               </li>`;
             });
             if (serviceData.length != 0) {
@@ -373,6 +375,49 @@ class GenerateWeb {
 
     getCarousels(slides) {
         console.log("Slides : ", slides)
+
+        var carousel_container = document.getElementById('carousel');
+        var li = document.createElement('li');
+        function iterate(item) {
+            console.log(`${item.imgUrl}`);
+            if(slides){
+                var att1 = document.createAttribute("data-transition");
+                att1.value = 'random';
+                var att2 = document.createAttribute("data-slotamount");
+                att2.value = '7';
+                var att3 = document.createAttribute("data-masterspeed");
+                att3.value = '300';
+                var att4 = document.createAttribute("data-saveperformance");
+                att4.value = 'off';
+                var att5 = document.createAttribute("data-thumb");
+                att5.value = `${item.imgUrl}`;
+                li.setAttributeNode(att1);
+                li.setAttributeNode(att2);
+                li.setAttributeNode(att3);
+                li.setAttributeNode(att4);
+                li.setAttributeNode(att5);
+                console.log(li)
+    
+                var img = document.createElement('img');
+                img.src = `${item.imgUrl}`;
+                var att6 = document.createAttribute("data-bgposition");
+                att6.value = 'center top';
+                var att7 = document.createAttribute("data-bgfit");
+                att7.value = 'cover';
+                var att8 = document.createAttribute("data-bgrepeat");
+                att8.value = 'no-repeat';
+                img.setAttributeNode(att6);
+                img.setAttributeNode(att7);
+                img.setAttributeNode(att8);
+                // console.log(img)
+    
+                li.appendChild(img);
+            }
+        }
+        carousel_container.appendChild(li);          
+        slides.forEach(iterate)
+
+        
     }
 
     getGalleryPhotos(photos) {

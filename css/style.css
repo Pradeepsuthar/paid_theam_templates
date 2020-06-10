@@ -2030,6 +2030,22 @@ footer .social_icons a {
 	margin-bottom: 4px;
 	letter-spacing: 2px;
 }
+
+.social-icon{
+	width: 5px;
+	height: 5px;
+	font-size: 20px;
+}
+.social-icon:hover{
+	background-color: #fb4848;
+	cursor: pointer;
+}
+
+@media(max-width:1200){
+	body{
+		background-color: red;
+	}
+}
 /*=======================================================
 			CONTACT FORM
 ========================================================*/
