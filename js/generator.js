@@ -14,14 +14,15 @@ firebase.initializeApp(firebaseConfig);
 // var id = "Yg0jIjIqTpX1FEGpT6BDZskZ4iL2"
 
 
-// console.log(window.location.href.length)
+console.log(window.location.origin.length)
+console.log(window.location.origin)
 // console.log(window.location.href)
 // console.log(window.location.href.slice(26))
 
-
-if (window.location.href.slice(26)) {
-    var id = window.location.href.slice(26);
-    // console.log("my Id : ", id)
+var slice_length = window.location.origin.length+5;
+if (window.location.href.slice(slice_length)) {
+    var id = window.location.href.slice(slice_length);
+    console.log("my Id : ", id)
 
     var today = new Date();
     class GenerateWeb {
