@@ -77,7 +77,7 @@ class GenerateWeb {
 
         if (document.getElementById('brand_logo')) {
             var brand_logo = document.getElementById('brand_logo');
-            brand_logo.src = "https://splixcube.com/SPLIXCUBE-logo-black.png";
+            brand_logo.src = userData.brand_logo;
         }
 
 
