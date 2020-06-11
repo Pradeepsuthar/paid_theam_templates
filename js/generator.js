@@ -11,19 +11,26 @@ var firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 
-// var id = "Yg0jIjIqTpX1FEGpT6BDZskZ4iL2"
+var id = "Yg0jIjIqTpX1FEGpT6BDZskZ4iL2"
 
 
-console.log(window.location.origin.length)
-console.log(window.location.origin)
+// console.log(window.location.origin.length)
+// console.log(window.location.origin)
 // console.log(window.location.href)
+// console.log(window.location.href.includes('/?id='))
+// console.log(window.location.href.indexOf('/?id='))
+// console.log(window.location.href.slice(window.location.href.indexOf('/?id=') + 5))
+// console.log(window.location.href.length)
 // console.log(window.location.href.slice(26))
 
-var slice_length = window.location.origin.length + 5;
 
+var slice_length = window.location.href.length + 5; //  /?id=Yg0jIjIqTpX1FEGpT6BDZskZ4iL2
+// console.log(slice_length)
 
-var id = window.location.href.slice(slice_length);
-console.log("my Id : ", id)
+// var id = window.location.href.slice(slice_length);
+// var id = window.location.href.slice(26);
+// var id = window.location.href.slice(window.location.href.indexOf('/?id=')+5);
+// console.log("my Id : ", id)
 
 
 
@@ -42,11 +49,12 @@ const menu = document.querySelector('#menu');
 // add menu item
 var menuItems = [
     { key: "Home", value: "index.html" },
-    { key: "Services", value: "service.html?id="+id },
-    { key: "Gallery", value: "gallery.html?id="+id },
-    { key: "Products", value: "products.html?id="+id },
-    { key: "About Us", value: "about.html?id="+id },
-    { key: "Contact Us", value: "contact.html?id="+id },
+    { key: "Services", value: "services.html" },
+    { key: "Photo Gallery", value: "gallery.html" },
+    { key: "Video Gallery", value: "video_gallery.html" },
+    { key: "Products", value: "products.html" },
+    { key: "About Us", value: "about.html" },
+    { key: "Contact Us", value: "contact.html" },
 ];
 for (var i = 0; i < menuItems.length; i++) {
     menu.appendChild(createMenuItem(menuItems[i].key, menuItems[i].value))
@@ -524,7 +532,40 @@ class GenerateWeb {
     }
 
     getGalleryVideos(videos) {
-        // console.log("Videos : ", videos)
+        console.log("Videos : ", videos)
+
+        function iterate(item) {
+            // console.log(`${item.videoUrl}`);
+            if (document.getElementById('gallery_li')) {
+                var li = document.createElement('li');
+                li.className = document.getElementById('gallery_li').className;
+                
+
+                var video_iframe = document.createElement('iframe');
+                video_iframe.src = "https://www.youtube.com/embed/"+item.youTubeLink.slice(17);
+                // console.log(item.youTubeLink.slice(17))
+                // https://www.youtube.com/embed/8gy49l1byvg
+                video_iframe.width = "100%";
+                video_iframe.height = "100%";
+                var att1 = document.createAttribute("frameborder");
+                att1.value = '0';
+                var att2 = document.createAttribute('allow')
+                att2.value = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture';
+                var att3 = document.createAttribute('allowfullscreen')
+                video_iframe.setAttributeNode(att1);
+                video_iframe.setAttributeNode(att2);
+                video_iframe.setAttributeNode(att3);
+
+                li.appendChild(video_iframe);
+
+                document.getElementById('video_gallery_row').appendChild(li)
+            }
+
+
+        }
+        videos.forEach(iterate)
+
+
     }
 }
 
@@ -534,7 +575,6 @@ var web = new GenerateWeb()
 // fetch data form user collection
 firebase.firestore().collection("users").doc(id).get().then(function (doc) {
     window.UsersDetails = doc.data()
-    console.log("hello")
     web.getUserData(UsersDetails)
 })
 
