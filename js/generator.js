@@ -9,9 +9,22 @@ var firebaseConfig = {
     measurementId: "G-2RR8FHSQL3"
 };
 
+function findGetParameter(parameterName) {
+    var result = null,
+        tmp = [];
+    var items = location.search.substr(1).split("&");
+    for (var index = 0; index < items.length; index++) {
+        tmp = items[index].split("=");
+        if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
+    }
+    return result;
+}
+
 firebase.initializeApp(firebaseConfig);
 
-var id = "Yg0jIjIqTpX1FEGpT6BDZskZ4iL2"
+//var id = "Yg0jIjIqTpX1FEGpT6BDZskZ4iL2"
+
+var id = findGetParameter("id")
 
 
 // console.log(window.location.origin.length)
@@ -49,7 +62,7 @@ const menu = document.querySelector('#menu');
 // add menu item
 var menuItems = [
     { key: "Home", value: "index.html" },
-    { key: "Services", value: "services.html" },
+    { key: "Services", value: "services.html?id="+id },
     { key: "Photo Gallery", value: "gallery.html" },
     { key: "Video Gallery", value: "video_gallery.html" },
     { key: "Products", value: "products.html" },
