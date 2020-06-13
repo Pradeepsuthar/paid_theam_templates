@@ -297,6 +297,37 @@ class GenerateWeb {
             carousel_container.appendChild(li);
             slides.forEach(iterate)
         }
+
+
+
+        // if(document.getElementById('dynamic_carousel')){
+            
+        //     var array = [];
+        //     for (var i = 0; i < slides.length; i++) {
+        //         array.push(slides[i]['imgUrl'])
+        //         console.log(slides[i]['imgUrl'])
+        //     }
+        //     var check = true;
+        //     var i = 0;
+        //     var imgs = document.getElementById("myimage");
+        //     setInterval(function () {
+        //         if (check) {
+        //             imgs.style.opacity = 1;
+        //             imgs.style.transition = "opacity 2s ease-in-out";
+        //             imgs.src = array[i];
+        //             i++;
+        //             if (i == array.length) { i = 0; }
+        //             check = false;
+        //         } else {
+        //             imgs.style.opacity = 0;
+        //             imgs.style.transition = "opacity 2s ease-in-out";
+        //             check = true;
+        //         }
+        //     }, 2000);
+        //     // function lol() {
+        //     // }
+        //     // window.onload = lol;
+        // }
     }
 
     getGalleryPhotos(photos) {
