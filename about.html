@@ -40,40 +40,40 @@
     <!-- header -->
     <header>
 
-     <!-- Logo -->
-     <div class="container">
-      <div class="logo"> <a href="index.html"><img class="img-responsive" src="" alt="Brand Logo" id="brand_logo"></a>
+      <!-- Logo -->
+      <div class="container">
+        <div class="logo"> <a href="index.html"><img class="img-responsive" src="" alt="Brand Logo" id="brand_logo"></a>
+        </div>
+
+        <!-- INFO -->
+        <div class="top-info-con d-none d-sm-block">
+          <ul>
+
+            <!-- Call Us Now -->
+            <li>
+              <div class="media-left">
+                <div class="icon"> <i class="icon-call-in"></i></div>
+              </div>
+              <div class="media-body">
+                <h6>Call Us Now </h6>
+                <p id="phone"> </p>
+              </div>
+            </li>
+
+            <!-- Email us -->
+            <li>
+              <div class="media-left">
+                <div class="icon"> <i class="icon-envelope-open"></i></div>
+              </div>
+              <div class="media-body">
+                <h6>Email us</h6>
+                <p id="email"></p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
       </div>
-
-      <!-- INFO -->
-      <div class="top-info-con d-none d-sm-block">
-        <ul>
-
-          <!-- Call Us Now -->
-          <li>
-            <div class="media-left">
-              <div class="icon"> <i class="icon-call-in"></i></div>
-            </div>
-            <div class="media-body">
-              <h6>Call Us Now </h6>
-              <p id="phone"> </p>
-            </div>
-          </li>
-
-          <!-- Email us -->
-          <li>
-            <div class="media-left">
-              <div class="icon"> <i class="icon-envelope-open"></i></div>
-            </div>
-            <div class="media-body">
-              <h6>Email us</h6>
-              <p id="email"></p>
-            </div>
-          </li>
-
-        </ul>
-      </div>
-    </div>
       <!-- Navigation -->
       <nav class="navbar">
         <div class="container">
@@ -96,97 +96,80 @@
       </div>
     </section>
 
-      <!-- Content -->
-      <div id="content">
-        <!-- What We Do -->
-        <section class="padding-top-100 padding-bottom-70" id="about_section">
-          <div class="container">
-            <!-- Heading -->
-            <div class="heading text-center">
-              <h5>What We Do</h5>
-            </div>
-  
-            <div class="in-testi container">
-              <div class="testi-name">
-                <h5 id="about_title"></h5>
-                <span id="shopOwnerName"></span>
-              </div>
-              <p id="about_desc"></p>
-            </div>
+    <!-- Content -->
+    <div id="content">
+      <!-- What We Do -->
+      <section class="padding-top-100 padding-bottom-70" id="about_section">
+        <div class="container">
+          <!-- Heading -->
+          <div class="heading text-center">
+            <h5>What We Do</h5>
           </div>
-        </section>
-      </div>
 
-  
-    <!--======= FOOTER =========-->
-    <footer class="mt-0" id="footer_section">
-      <div class="container">
-        <div class="footer-info">
-          <div class="container">
-            <!--======= Footer Info =========-->
-            <div class="foot-info-con px-1">
-              <ul class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 px-0" id="socialLinks">
-                <!-- Call Us Now -->
-                <li class="col mb-3 px-0" id="socialLink_li" style="display: none;">
-                  <div class="media-left" id="socialLink_li_media_left">
-                    <div class="icon social-icon mx-0 px-0" id="socialLink_li_media_left_icon"> <i class="fa fa-whatsapp"></i></div>
-                  </div>
-                  <div class="media-body" id="socialLink_li_media_body">
-                    <h6>Chat on whatsapp </h6>
-                    <p><a class="text-white" href="#" id="socialLink_li_media_body_a">Whatsapp</a></p>
-                  </div>
-                </li>
-                <!-- Email us -->
-                <!-- <li class="col-md-3 col-sm-6 col-xs-6">
-                  <div class="media-left">
-                    <div class="icon"> <i class="fa fa-instagram"></i></div>
-                  </div>
-                  <div class="media-body">
-                    <h6>Chat on instagram</h6>
-                    <p><a class="text-white" href="#" id="instagram">Instagram</a></p>
-                  </div>
-                </li> -->
-
-                <!-- Fax to us -->
-                <!-- <li class="col-md-3 col-sm-6 col-xs-6">
-                  <div class="media-left">
-                    <div class="icon"> <i class="fa fa-linkedin"></i></div>
-                  </div>
-                  <div class="media-body">
-                    <h6>Chat on linkedin</h6>
-                    <p><a class="text-white" href="#" id="linkedin">Linkedin</a></p>
-                  </div>
-                </li> -->
-                <!-- Opening Time -->
-                <!-- <li class="col-md-3 col-sm-6 col-xs-6">
-                  <div class="media-left">
-                    <div class="icon"> <i class="fa fa-youtube"></i></div>
-                  </div>
-                  <div class="media-body">
-                    <h6>Chat on youtube</h6>
-                    <p><a class="text-white" href="#" id="youtube">YouTube</a></p>
-                  </div>
-                </li> -->
-              </ul>
+          <div class="in-testi container">
+            <div class="testi-name">
+              <h5 id="about_title"></h5>
+              <span id="shopOwnerName"></span>
             </div>
+            <p id="about_desc"></p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!--======= FOOTER =========-->
+    <footer class="pt-4 pt-md-5 border-top footer-info" id="footer_section">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-12 col-md">
+            <h6>Copyrights &copy;<br><span id="shopName"></span>.</h6>
+            <!-- Social buttons -->
+            <ul class="list-unstyled list-inline text-left" id="socialLinks_ul">
+              <li class="list-inline-item" id="socialLink_li" style="display: none;">
+                <a href="#" class="btn-floating btn-fb text-white" id="socialLink_a">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+            </ul>
+            <!-- Social buttons -->
+          </div>
+          <div class="col-12 col-md">
+            <h5>Address</h5><br><br>
+            <ul class="list-unstyled text-small">
+              <li id="address_info">
+                <p><i class="fa fa-home mr-3"></i> <span id="address"></span></p>
+              </li>
+              <li id="message_info">
+                <p><i class="fa fa-envelope mr-3"></i> <span id="mess_with_email"></span></p>
+              </li>
+              <div id="call_info">
+                <li>
+                  <p><i class="fa fa-phone mr-3"></i> <span id="phone_call"></span></p>
+                </li>
+                <li>
+                  <p><i class="fa fa-whatsapp mr-3"></i> <span id="whatsapp_call"></span></p>
+                </li>
+              </div>
+            </ul>
           </div>
         </div>
       </div>
     </footer>
-    <!--======= RIGHTS =========-->
-    <div class="rights">
-      <div class="container">
-        <p>Copyrights &copy; by <span id="shopName"></span>. All Rights Reserved </p>
-      </div>
+    <div class="fixed-bottom border-0 mr-5 mb-5 text-right">
+      <span>
+        <a class="bg-transparent" id="call_now">
+          <img src="https://pngimage.net/wp-content/uploads/2018/05/call-now-icon-png-6.png" width="40" height="40">
+        </a>
+      </span>
+      <span>
+        <a class="bg-transparent" id="whatsapp_now">
+          <img src="https://cdn4.iconfinder.com/data/icons/social-media-2210/24/Whatsapp-512.png" width="50"
+            height="50">
+        </a>
+      </span>
     </div>
   </div>
-
-  <div class="fixed-bottom border-0 mr-5 mb-5 text-right">
-    <a class="btn btn-default px-0 bg-transparent btn-lg" id="call_now">
-      <i class="fa fa-phone"></i>
-    </a>
-  </div>
-
   <script src="js/jquery-1.12.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/own-menu.js"></script>

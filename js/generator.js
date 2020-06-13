@@ -260,74 +260,32 @@ class GenerateWeb {
     }
 
     getCarousels(slides) {
-        if (document.getElementById('carousel')) {
-            var carousel_container = document.getElementById('carousel');
-            var li = document.createElement('li');
-            function iterate(item) {
-                if (slides) {
-                    var att1 = document.createAttribute("data-transition");
-                    att1.value = 'random';
-                    var att2 = document.createAttribute("data-slotamount");
-                    att2.value = '7';
-                    var att3 = document.createAttribute("data-masterspeed");
-                    att3.value = '300';
-                    var att4 = document.createAttribute("data-saveperformance");
-                    att4.value = 'off';
-                    var att5 = document.createAttribute("data-thumb");
-                    att5.value = `${item.imgUrl}`;
-                    li.setAttributeNode(att1);
-                    li.setAttributeNode(att2);
-                    li.setAttributeNode(att3);
-                    li.setAttributeNode(att4);
-                    li.setAttributeNode(att5);
-                    var img = document.createElement('img');
-                    img.src = `${item.imgUrl}`;
-                    var att6 = document.createAttribute("data-bgposition");
-                    att6.value = 'center top';
-                    var att7 = document.createAttribute("data-bgfit");
-                    att7.value = 'cover';
-                    var att8 = document.createAttribute("data-bgrepeat");
-                    att8.value = 'no-repeat';
-                    img.setAttributeNode(att6);
-                    img.setAttributeNode(att7);
-                    img.setAttributeNode(att8);
-                    li.appendChild(img);
-                }
+        if (document.getElementById('dynamic_carousel')) {
+            var array = [];
+            for (var i = 0; i < slides.length; i++) {
+                array.push(slides[i]['imgUrl'])
             }
-            carousel_container.appendChild(li);
-            slides.forEach(iterate)
+            function lol() {
+                var check = true;
+                var i = 0;
+                var imgs = document.getElementById("myimage");
+                setInterval(function () {
+                    if (check) {
+                        imgs.style.opacity = 1;
+                        imgs.style.transition = "opacity 2s ease-in-out";
+                        imgs.src = array[i];
+                        i++;
+                        if (i == array.length) { i = 0; }
+                        check = false;
+                    } else {
+                        imgs.style.opacity = 0;
+                        imgs.style.transition = "opacity 2s ease-in-out";
+                        check = true;
+                    }
+                }, 2000);
+            }
+            window.onload = lol();
         }
-
-
-
-        // if(document.getElementById('dynamic_carousel')){
-            
-        //     var array = [];
-        //     for (var i = 0; i < slides.length; i++) {
-        //         array.push(slides[i]['imgUrl'])
-        //         console.log(slides[i]['imgUrl'])
-        //     }
-        //     var check = true;
-        //     var i = 0;
-        //     var imgs = document.getElementById("myimage");
-        //     setInterval(function () {
-        //         if (check) {
-        //             imgs.style.opacity = 1;
-        //             imgs.style.transition = "opacity 2s ease-in-out";
-        //             imgs.src = array[i];
-        //             i++;
-        //             if (i == array.length) { i = 0; }
-        //             check = false;
-        //         } else {
-        //             imgs.style.opacity = 0;
-        //             imgs.style.transition = "opacity 2s ease-in-out";
-        //             check = true;
-        //         }
-        //     }, 2000);
-        //     // function lol() {
-        //     // }
-        //     // window.onload = lol;
-        // }
     }
 
     getGalleryPhotos(photos) {

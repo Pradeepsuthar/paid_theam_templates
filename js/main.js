@@ -252,7 +252,6 @@ if ($('#map').length) {
     position: myLatLng,
     map: map,
     tittle: 'Envato',
-    icon: './images/map-locator.png'
 });} 
 else {
   return false;
