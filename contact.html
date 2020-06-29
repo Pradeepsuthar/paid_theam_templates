@@ -82,230 +82,176 @@
         </div>
       </nav>
     </header>
-  
-  <!-- SUB BANNER -->
-  <section class="sub-bnr">
-    <div class="position-center-center">
-      <div class="container"> <img src="images/sub-bnr-hr-up-contact.png" alt="" >
-        <h4>Keep In Touch</h4>
-        <ol class="breadcrumb">
-          <li><a href="index.html">Home</a></li>
-          <li class="active">Contact</li>
-        </ol>
-        <img src="images/sub-bnr-hr.png" alt="" > </div>
-    </div>
-  </section>
-  
-  <!-- Content -->
-  <div id="content"> 
-    
-    <!-- CONTACT -->
-    <section class="contact-page padding-top-0"> 
-      
-      <!-- CONTACT FORM -->
-      <div class="container">
-        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2  margin-top-100 margin-bottom-100">
-          <div class="col mb-3"> 
-            
-            <!-- Heading -->
-            <div class="heading text-left">
-              <h5>Leave A Message</h5>
-              <p>Phasellus imperdiet libero sit amet ante Donec convallis </p>
-            </div>
-            <div class="contact-form"> 
-              <!-- Form  -->
-              <div class="margin-top-30">
-                <div class="contact-form"> 
-                  
-                  <!-- Success Msg -->
-                  <div id="contact_message" class="success-msg"> <i class="fa fa-paper-plane-o"></i>Thank You. Your Message has been Submitted</div>
-                  
-                  <!-- FORM -->
-                  <form id="contact_form" class="contact-form" method="post" onSubmit="return false">
-                    <ul class="row">
-                      <li class="col-md-6 col-sm-12 col-xs-12">
-                        <label>
-                          <input type="text" class="form-control" name="name" id="name" placeholder="Your Name">
-                        </label>
-                      </li>
-                      <li class="col-md-6 col-sm-12 col-xs-12">
-                        <label>
-                          <input type="text" class="form-control" name="email" id="email" placeholder="E-Mail">
-                        </label>
-                      </li>
-                      <li class="col-md-6 col-sm-12 col-xs-12">
-                        <label>
-                          <input type="text" class="form-control" name="company" id="company" placeholder="Phone">
-                        </label>
-                      </li>
-                      <li class="col-md-6 col-sm-12 col-xs-12">
-                        <label>
-                          <input type="text" class="form-control" name="website" id="website" placeholder="Subject">
-                        </label>
-                      </li>
-                      <li class="col-md-12 col-sm-12 col-xs-12">
-                        <label>
-                          <textarea class="form-control" name="message" id="message" rows="5" placeholder="Your Message"></textarea>
-                        </label>
-                      </li>
-                      <li class="col-md-12 col-sm-12 col-xs-12">
-                        <button type="submit" value="submit" class="btn" id="btn_submit" onClick="proceed();">send Message <span><i class="ion-ios-arrow-thin-right"></i></span></button>
-                      </li>
-                    </ul>
-                  </form>
+
+    <!-- SUB BANNER -->
+    <section class="sub-bnr">
+      <div class="position-center-center">
+        <div class="container"> <img src="images/sub-bnr-hr-up-contact.png" alt="">
+          <h4>Keep In Touch</h4>
+          <ol class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li class="active">Contact</li>
+          </ol>
+          <img src="images/sub-bnr-hr.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- Content -->
+    <div id="content">
+
+      <!-- CONTACT -->
+      <section class="contact-page padding-top-0">
+
+        <!-- CONTACT FORM -->
+        <div class="container">
+          <div
+            class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2  margin-top-100 margin-bottom-100">
+            <div class="col mb-3">
+
+              <!-- Heading -->
+              <div class="heading text-left">
+                <h5>Leave A Message</h5>
+                <p>Phasellus imperdiet libero sit amet ante Donec convallis </p>
+              </div>
+              <div class="contact-form">
+                <!-- Form  -->
+                <div class="margin-top-30">
+                  <div class="contact-form">
+
+                    <!-- Success Msg -->
+                    <div id="contact_message" class="success-msg"> <i class="fa fa-paper-plane-o"></i>Thank You. Your
+                      Message has been Submitted</div>
+
+                    <!-- FORM -->
+                    <form id="contact_form" class="contact-form" method="post" onSubmit="return false">
+                      <ul class="row">
+                        <li class="col-md-6 col-sm-12 col-xs-12">
+                          <label>
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Your Name">
+                          </label>
+                        </li>
+                        <li class="col-md-6 col-sm-12 col-xs-12">
+                          <label>
+                            <input type="text" class="form-control" name="email" id="email" placeholder="E-Mail">
+                          </label>
+                        </li>
+                        <li class="col-md-6 col-sm-12 col-xs-12">
+                          <label>
+                            <input type="text" class="form-control" name="company" id="company" placeholder="Phone">
+                          </label>
+                        </li>
+                        <li class="col-md-6 col-sm-12 col-xs-12">
+                          <label>
+                            <input type="text" class="form-control" name="website" id="website" placeholder="Subject">
+                          </label>
+                        </li>
+                        <li class="col-md-12 col-sm-12 col-xs-12">
+                          <label>
+                            <textarea class="form-control" name="message" id="message" rows="5"
+                              placeholder="Your Message"></textarea>
+                          </label>
+                        </li>
+                        <li class="col-md-12 col-sm-12 col-xs-12">
+                          <button type="submit" value="submit" class="btn" id="btn_submit" onClick="proceed();">send
+                            Message <span><i class="ion-ios-arrow-thin-right"></i></span></button>
+                        </li>
+                      </ul>
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          
-          <!--======= Timing =========-->
-          <div class="col"> 
-            
-            <!--======= Footer Info =========-->
-            <div class="cont-info-con">
-              <ul>
-                
-                <!-- Call Us Now -->
-                <li id="address_info">
-                  <div class="media-left">
-                    <div class="icon"> <i class="icon-home"></i></div>
-                  </div>
-                  <div class="media-body">
-                    <h6>Our Location </h6>
-                    <p id="address"></p>
-                  </div>
-                </li>
-                
-                <!-- Email us -->
-                <li id="call_info">
-                  <div class="media-left">
-                    <div class="icon"> <i class="ion-android-call"></i></div>
-                  </div>
-                  <div class="media-body">
-                    <h6>Call Us On</h6>
-                    <p id="phone_call"></p>
-                    <p id="whatsapp_call"></p>
-                  </div>
-                </li>
-                
-                <!-- Fax to us -->
-                <li id="message_info">
-                  <div class="media-left">
-                    <div class="icon"> <i class="icon-envelope-letter"></i></div>
-                  </div>
-                  <div class="media-body">
-                    <h6>Send a Message </h6>
-                    <p id="mess_with_email"></p>
-                  </div>
-                </li>
-              </ul>
+            <div class="col">
+              <!-- MAP -->
+              <div id="map"></div>
             </div>
           </div>
         </div>
-      </div>
-      
-      <!-- MAP -->
-      <!-- <div id="map"></div> -->
-    </section>
-  </div>
-  
-  
-    <!--======= FOOTER =========-->
-    <footer class="mt-0" id="footer_section">
-      <div class="container">
-        <div class="footer-info">
-          <div class="container">
-            <!--======= Footer Info =========-->
-            <div class="foot-info-con px-1">
-              <ul class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 px-0" id="socialLinks">
-                <!-- Call Us Now -->
-                <li class="col mb-3 px-0" id="socialLink_li" style="display: none;">
-                  <div class="media-left" id="socialLink_li_media_left">
-                    <div class="icon social-icon mx-0 px-0" id="socialLink_li_media_left_icon"> <i class="fa fa-whatsapp"></i></div>
-                  </div>
-                  <div class="media-body" id="socialLink_li_media_body">
-                    <h6>Chat on whatsapp </h6>
-                    <p><a class="text-white" href="#" id="socialLink_li_media_body_a">Whatsapp</a></p>
-                  </div>
-                </li>
-                <!-- Email us -->
-                <!-- <li class="col-md-3 col-sm-6 col-xs-6">
-                  <div class="media-left">
-                    <div class="icon"> <i class="fa fa-instagram"></i></div>
-                  </div>
-                  <div class="media-body">
-                    <h6>Chat on instagram</h6>
-                    <p><a class="text-white" href="#" id="instagram">Instagram</a></p>
-                  </div>
-                </li> -->
+      </section>
+    </div>
 
-                <!-- Fax to us -->
-                <!-- <li class="col-md-3 col-sm-6 col-xs-6">
-                  <div class="media-left">
-                    <div class="icon"> <i class="fa fa-linkedin"></i></div>
-                  </div>
-                  <div class="media-body">
-                    <h6>Chat on linkedin</h6>
-                    <p><a class="text-white" href="#" id="linkedin">Linkedin</a></p>
-                  </div>
-                </li> -->
-                <!-- Opening Time -->
-                <!-- <li class="col-md-3 col-sm-6 col-xs-6">
-                  <div class="media-left">
-                    <div class="icon"> <i class="fa fa-youtube"></i></div>
-                  </div>
-                  <div class="media-body">
-                    <h6>Chat on youtube</h6>
-                    <p><a class="text-white" href="#" id="youtube">YouTube</a></p>
-                  </div>
-                </li> -->
-              </ul>
-            </div>
+    <!--======= FOOTER =========-->
+    <footer class="pt-4 pt-md-5 border-top footer-info" id="footer_section">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-12 col-md">
+            <h6>Copyrights &copy;<br><span id="shopName"></span>.</h6>
+            <!-- Social buttons -->
+            <ul class="list-unstyled list-inline text-left" id="socialLinks_ul">
+              <li class="list-inline-item" id="socialLink_li" style="display: none;">
+                <a href="#" class="btn-floating btn-fb text-white" id="socialLink_a">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+            </ul>
+            <!-- Social buttons -->
+          </div>
+          <div class="col-12 col-md">
+            <h5>Address</h5><br><br>
+            <ul class="list-unstyled text-small">
+              <li id="address_info">
+                <p><i class="fa fa-home mr-3"></i> <span id="address"></span></p>
+              </li>
+              <li id="message_info">
+                <p><i class="fa fa-envelope mr-3"></i> <span id="mess_with_email"></span></p>
+              </li>
+              <div id="call_info">
+                <li>
+                  <p><i class="fa fa-phone mr-3"></i> <span id="phone_call"></span></p>
+                </li>
+                <li>
+                  <p><i class="fa fa-whatsapp mr-3"></i> <span id="whatsapp_call"></span></p>
+                </li>
+              </div>
+            </ul>
           </div>
         </div>
       </div>
     </footer>
-    <!--======= RIGHTS =========-->
-    <div class="rights">
-      <div class="container">
-        <p>Copyrights &copy; by <span id="shopName"></span>. All Rights Reserved </p>
-      </div>
+    <div class="fixed-bottom border-0 mr-5 mb-5 text-right">
+      <span>
+        <a class="bg-transparent" id="call_now">
+          <img src="https://pngimage.net/wp-content/uploads/2018/05/call-now-icon-png-6.png" width="40" height="40">
+        </a>
+      </span>
+      <span>
+        <a class="bg-transparent" id="whatsapp_now">
+          <img src="https://cdn4.iconfinder.com/data/icons/social-media-2210/24/Whatsapp-512.png" width="50"
+            height="50">
+        </a>
+      </span>
     </div>
   </div>
 
-  <div class="fixed-bottom border-0 mr-5 mb-5 text-right">
-    <a class="btn btn-default px-0 bg-transparent btn-lg" id="call_now">
-      <i class="fa fa-phone"></i>
-    </a>
-  </div>
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/own-menu.js"></script>
+  <script src="js/jquery.isotope.min.js"></script>
+  <script src="js/jquery.lighter.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
 
-<script src="js/jquery-1.12.4.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/own-menu.js"></script>
-<script src="js/jquery.isotope.min.js"></script>
-<script src="js/jquery.lighter.js"></script>
-<script src="js/owl.carousel.min.js"></script>
+  <!-- RS5.0 Core JS Files -->
+  <script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
+  <script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>
+  <script type="text/javascript" src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
+  <script type="text/javascript" src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+  <script type="text/javascript" src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+  <script type="text/javascript" src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+  <script type="text/javascript" src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
+  <script type="text/javascript" src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+  <script type="text/javascript" src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+  <script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+  <script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>
 
-<!-- RS5.0 Core JS Files -->
-<script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
-<script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>
-<script type="text/javascript" src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
-<script type="text/javascript" src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-<script type="text/javascript" src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-<script type="text/javascript" src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-<script type="text/javascript" src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
-<script type="text/javascript" src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-<script type="text/javascript" src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-<script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-<script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>
+  <!-- Begin map script-->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCf0dPCQ0C7oVF0WFKhuyz7v7oWei3vFPI "></script>
+  <script src="js/main.js"></script>
 
-<!-- Begin map script-->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCf0dPCQ0C7oVF0WFKhuyz7v7oWei3vFPI "></script>
-<script src="js/main.js"></script>
-
-<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
-<script src="js/generator.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
+  <script src="js/generator.js"></script>
 </body>
 
 </html>

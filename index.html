@@ -29,6 +29,14 @@
   <link
     href='https://fonts.googleapis.com/css?family=Martel+Sans:400,200,300,600,700,800,900|Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic'
     rel='stylesheet' type='text/css'>
+
+  <style>
+    #myimage {
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
 </head>
 
 <body>
@@ -76,38 +84,15 @@
           <ul class="nav ownmenu" id="menu"></ul>
         </div>
       </nav>
-    </header> 
-
-    
-
+    </header>
     <!--======= HOME MAIN SLIDER =========-->
-    <div class="home-slider section">
-      <!-- Slider Loader -->
-      <div id="loader" class="hom-slie">
-        <div class="tp-loader spinner0"> <span class="dot1"></span> <span class="dot2"></span> <span
-            class="bounce1"></span> <span class="bounce2"></span> <span class="bounce3"></span> </div>
-      </div>
 
-      <!-- SLIDE Start -->
-      <div class="tp-banner-container">
-        <div class="tp-banner">
-          <ul id="carousel">
-            <!-- SLIDE  -->
-            <li data-transition="random" data-slotamount="7" data-masterspeed="300" data-saveperformance="off"
-              data-thumb="https://firebasestorage.googleapis.com/v0/b/webbuilder081.appspot.com/o/Yg0jIjIqTpX1FEGpT6BDZskZ4iL2%2Fservices%2FdsLkFrsZNzisLzs955fu%2Fimage?alt=media&token=c2a72066-d57e-4787-bb87-8e2d52b6ad5c">
-              <img
-                src="https://firebasestorage.googleapis.com/v0/b/webbuilder081.appspot.com/o/Yg0jIjIqTpX1FEGpT6BDZskZ4iL2%2Fservices%2FdsLkFrsZNzisLzs955fu%2Fimage?alt=media&token=c2a72066-d57e-4787-bb87-8e2d52b6ad5c"
-                alt="slider" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
-            </li>
-
-          </ul>
-        </div>
-      </div>
+    <div id="dynamic_carousel">
+      <img src="" id="myimage">
     </div>
 
     <!-- Content -->
     <div id="content">
-
       <!-- Welcome -->
       <section class="padding-top-100 padding-bottom-100">
         <div class="container">
@@ -119,94 +104,90 @@
           <!-- SERVICES -->
           <div class="services">
             <ul class="row" id="ourServices">
-
             </ul>
           </div>
         </div>
       </section>
     </div>
-
     <!-- End Content -->
-
-
-    <!--======= FOOTER =========-->
-    <footer class="mt-0" id="footer_section">
-      <div class="container">
-        <div class="footer-info">
-          <div class="container">
-            <!--======= Footer Info =========-->
-            <div class="foot-info-con px-1">
-              <ul class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 px-0" id="socialLinks">
-                <!-- Call Us Now -->
-                <li class="col mb-3 px-0" id="socialLink_li" style="display: none;">
-                  <div class="media-left" id="socialLink_li_media_left">
-                    <div class="icon social-icon mx-0 px-0" id="socialLink_li_media_left_icon"> <i
-                        class="fa fa-whatsapp"></i></div>
-                  </div>
-                  <div class="media-body" id="socialLink_li_media_body">
-                    <h6>Chat on whatsapp </h6>
-                    <p><a class="text-white" href="#" id="socialLink_li_media_body_a">Whatsapp</a></p>
-                  </div>
-                </li>
-                <!-- Email us -->
-                <!-- <li class="col-md-3 col-sm-6 col-xs-6">
-                  <div class="media-left">
-                    <div class="icon"> <i class="fa fa-instagram"></i></div>
-                  </div>
-                  <div class="media-body">
-                    <h6>Chat on instagram</h6>
-                    <p><a class="text-white" href="#" id="instagram">Instagram</a></p>
-                  </div>
-                </li> -->
-
-                <!-- Fax to us -->
-                <!-- <li class="col-md-3 col-sm-6 col-xs-6">
-                  <div class="media-left">
-                    <div class="icon"> <i class="fa fa-linkedin"></i></div>
-                  </div>
-                  <div class="media-body">
-                    <h6>Chat on linkedin</h6>
-                    <p><a class="text-white" href="#" id="linkedin">Linkedin</a></p>
-                  </div>
-                </li> -->
-                <!-- Opening Time -->
-                <!-- <li class="col-md-3 col-sm-6 col-xs-6">
-                  <div class="media-left">
-                    <div class="icon"> <i class="fa fa-youtube"></i></div>
-                  </div>
-                  <div class="media-body">
-                    <h6>Chat on youtube</h6>
-                    <p><a class="text-white" href="#" id="youtube">YouTube</a></p>
-                  </div>
-                </li> -->
-              </ul>
+    <!-- Content -->
+    <div id="content">
+      <!-- What We Do -->
+      <section class="padding-bottom-70" id="about_section">
+        <div class="">
+          <!-- Heading -->
+          <div class="heading text-center">
+            <h5>What We Do</h5>
+          </div>
+          <div class="in-testi">
+            <div class="testi-name">
+              <h5 id="about_title"></h5>
+              <span id="shopOwnerName"></span>
             </div>
+            <p id="about_desc"></p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!--======= FOOTER =========-->
+    <footer class="pt-4 pt-md-5 border-top footer-info" id="footer_section">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-12 col-md">
+            <h6>Copyrights &copy;<br><span id="shopName"></span>.</h6>
+            <!-- Social buttons -->
+            <ul class="list-unstyled list-inline text-left" id="socialLinks_ul">
+              <li class="list-inline-item" id="socialLink_li" style="display: none;">
+                <a href="#" class="btn-floating btn-fb text-white" id="socialLink_a">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+            </ul>
+            <!-- Social buttons -->
+          </div>
+          <div class="col-12 col-md">
+            <h5>Address</h5><br><br>
+            <ul class="list-unstyled text-small">
+              <li id="address_info">
+                <p><i class="fa fa-home mr-3"></i> <span id="address"></span></p>
+              </li>
+              <li id="message_info">
+                <p><i class="fa fa-envelope mr-3"></i> <span id="mess_with_email"></span></p>
+              </li>
+              <div id="call_info">
+                <li>
+                  <p><i class="fa fa-phone mr-3"></i> <span id="phone_call"></span></p>
+                </li>
+                <li>
+                  <p><i class="fa fa-whatsapp mr-3"></i> <span id="whatsapp_call"></span></p>
+                </li>
+              </div>
+            </ul>
           </div>
         </div>
       </div>
     </footer>
-
-    <!--======= RIGHTS =========-->
-    <div class="rights">
-      <div class="container">
-        <p>Copyrights &copy; by <span id="shopName"></span>. All Rights Reserved </p>
-      </div>
+    <div class="fixed-bottom border-0 mr-5 mb-5 text-right">
+      <span>
+        <a class="bg-transparent" id="call_now">
+          <img src="https://pngimage.net/wp-content/uploads/2018/05/call-now-icon-png-6.png" width="40" height="40">
+        </a>
+      </span>
+      <span>
+        <a class="bg-transparent" id="whatsapp_now">
+          <img src="https://cdn4.iconfinder.com/data/icons/social-media-2210/24/Whatsapp-512.png" width="50"
+            height="50">
+        </a>
+      </span>
     </div>
   </div>
-
-  <div class="fixed-bottom border-0 mr-5 mb-5 text-right">
-    <a class="btn btn-default px-0 bg-transparent btn-lg" id="call_now">
-      <i class="fa fa-phone"></i>
-    </a>
-  </div>
-
   <script src="js/jquery-1.12.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/own-menu.js"></script>
   <script src="js/jquery.isotope.min.js"></script>
   <script src="js/jquery.lighter.js"></script>
   <script src="js/owl.carousel.min.js"></script>
-
   <!-- RS5.0 Core JS Files -->
   <script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
   <script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>
@@ -219,16 +200,12 @@
   <script type="text/javascript" src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
   <script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
   <script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>
-
-
   <!-- Begin map script-->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCf0dPCQ0C7oVF0WFKhuyz7v7oWei3vFPI "></script>
   <script src="js/main.js"></script>
-
   <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
   <script src="js/generator.js"></script>
-
 </body>
 
 </html>
